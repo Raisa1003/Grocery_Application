@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [myTestSuite]">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="myTest(failed)">
+    <classes>
+      <class name="testscripts.AdminUserTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="VerifyUserCanSearchAdminUserInfo"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.AdminUserTest -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [myTestSuite] -->

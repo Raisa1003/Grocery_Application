@@ -1,0 +1,19 @@
+<suite name="Groceryapplication" parallel="tests" thread-count="2">
+	<test name="ChromeTest">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<!-- <listeners>
+			<listener class-name="listeners.Listeners" />
+			<listener class-name="listeners.RetryListener" />
+		</listeners>-->
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+		
+			<class name="testscripts.SubCategoryTest"></class>
+
+		</classes>
+	</test>
+</suite>
