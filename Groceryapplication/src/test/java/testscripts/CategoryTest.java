@@ -16,6 +16,15 @@ public class CategoryTest extends BaseClass {
 	HomePage home;
 	CategoryPage category;
 
+	@Test(priority=1)
+	public void verifyCategoryIsDeleted() throws IOException, AWTException, InterruptedException {
+		login = new LoginPage(driver);
+		home = login.loginUsingExcelData();
+		category = home.clickOnCategory().deleteCategory();
+		boolean isalertpresent = category.isAlertDisplayed();
+		Assert.assertTrue(isalertpresent, Constants.CA_verifyCategoryIsDeleted);
+	}
+
 	@Test
 	public void validateUserCanChangeActiveCategoryStatus() throws IOException {
 
@@ -23,27 +32,19 @@ public class CategoryTest extends BaseClass {
 		home = login.loginUsingExcelData();
 		category = home.clickOnCategory().clickOnActiveCategoryStatus();
 		boolean isalertpresent = category.isAlertDisplayed();
-		Assert.assertTrue(isalertpresent,Constants.CA_validateUserCanChangeActiveCategoryStatus);
+		Assert.assertTrue(isalertpresent, Constants.CA_validateUserCanChangeActiveCategoryStatus);
 
 	}
 
-	@Test
+	@Test(priority=2)
 	public void verifyUserCanAddNewCategory() throws IOException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();
 		category = home.clickOnCategory().clickOnNewCategoryButton().enterCategoryField().selectDiscountField()
 				.clickOnImageUpload().clickOnRadioTopMenu().clickOnRadioLeftMenu().saveButton();
 		boolean isalertpresent = category.isAlertDisplayed();
-		Assert.assertTrue(isalertpresent,Constants.CA_verifyUserCanAddNewCategory );
+		Assert.assertTrue(isalertpresent, Constants.CA_verifyUserCanAddNewCategory);
 
 	}
 
-	@Test
-	public void verifyCategoryIsDeleted() throws IOException, AWTException, InterruptedException {
-		login = new LoginPage(driver);
-		home = login.loginUsingExcelData();
-		category = home.clickOnCategory().deleteCategory();
-		boolean isalertpresent = category.isAlertDisplayed();
-		Assert.assertTrue(isalertpresent,Constants.CA_verifyCategoryIsDeleted );
-	}
 }

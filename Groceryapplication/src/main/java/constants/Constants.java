@@ -12,8 +12,8 @@ public class Constants {
 	
 	
 	public static final String AU_verifyUserCanAddNewAdminDetails="Admin User is not created successfully";
-	public static final String AU_VerifyUserCanChangeStatusOfAdminDetails="Admin status is not displayed successfully";
-	public static final String AU_VerifyUserCanSearchAdminUserInfo="Admin user details not found successfully";
+	public static final String AU_verifyUserCanChangeStatusOfAdminDetails="Admin status is not displayed successfully";
+	public static final String AU_verifyUserCanSearchAdminUserInfo="Admin user details not found successfully";
 	
 	public static final String CA_validateUserCanChangeActiveCategoryStatus=" Category status is not changed successfully";
 	public static final String CA_verifyUserCanAddNewCategory="Category is not created successfully";

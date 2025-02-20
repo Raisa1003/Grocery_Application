@@ -17,7 +17,7 @@ public class AdminUserTest extends BaseClass {
 	CategoryPage category;
 	AdminUserPage adminuser;
 
-	@Test
+	@Test(priority=1)
 	public void verifyUserCanAddNewAdminDetails() throws IOException {
 
 		login = new LoginPage(driver);
@@ -28,22 +28,22 @@ public class AdminUserTest extends BaseClass {
 	}
 
 	@Test
-	public void VerifyUserCanChangeStatusOfAdminDetails() throws IOException {
+	public void verifyUserCanChangeStatusOfAdminDetails() throws IOException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();
 		adminuser = home.clickOnAdminUserFooterMoreInfo().clickOnNewAdminUserButton().clickOnStatuslockIcon();
 		boolean isstatusalertdisplayed = adminuser.isAlertMessageDisplayed();
-		Assert.assertTrue(isstatusalertdisplayed, Constants.AU_VerifyUserCanChangeStatusOfAdminDetails);
+		Assert.assertTrue(isstatusalertdisplayed, Constants.AU_verifyUserCanChangeStatusOfAdminDetails);
 	}
 
 	@Test
-	public void VerifyUserCanSearchAdminUserInfo() throws IOException {
+	public void verifyUserCanSearchAdminUserInfo() throws IOException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();
 		adminuser = home.clickOnAdminUserFooterMoreInfo().searchAdminUserInfo().searchUserNameandPasswordField()
 				.clickOnSearchButton();
 		boolean issearchedtabledisplayed = adminuser.isSearchedTableDisplayed();
-		Assert.assertTrue(issearchedtabledisplayed, Constants.AU_VerifyUserCanSearchAdminUserInfo);
+		Assert.assertTrue(issearchedtabledisplayed, Constants.AU_verifyUserCanSearchAdminUserInfo);
 	}
 
 }

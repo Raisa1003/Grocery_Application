@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-myTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">myTestSuite</span>
+              <span class="suite-name border-failed">myTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-myTestSuite" class="navigator-link ">
-                    <span>C:\Users\DELL\Downloads\Groceryapplication\testng.xml</span>
+                    <span>C:\Users\DELL\git\Grocery_Application\Groceryapplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-myTestSuite" class="hide-methods failed suite-myTestSuite"> (hide)</a> <!-- hide-methods failed suite-myTestSuite -->
+                      <a href="#" panel-name="suite-myTestSuite" class="show-methods failed suite-myTestSuite"> (show)</a> <!-- show-methods failed suite-myTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-myTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.CategoryTest" class="method navigator-link" hash-for-method="validateUserCanChangeActiveCategoryStatus">validateUserCanChangeActiveCategoryStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-myTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,62 @@
                     <div class="method-list-content passed suite-myTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.AdminUserTest" class="method navigator-link" hash-for-method="VerifyUserCanChangeStatusOfAdminDetails">VerifyUserCanChangeStatusOfAdminDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.SubCategoryTest" class="method navigator-link" hash-for-method="verifyAddNewSubcategorywithValidDetails">verifyAddNewSubcategorywithValidDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.AdminUserTest" class="method navigator-link" hash-for-method="VerifyUserCanSearchAdminUserInfo">VerifyUserCanSearchAdminUserInfo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.ManageNewsTest" class="method navigator-link" hash-for-method="verifyAdminUserCanAddNews">verifyAdminUserCanAddNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.ManageNewsTest" class="method navigator-link" hash-for-method="verifyAdminUserCanManageAndEditNews">verifyAdminUserCanManageAndEditNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.CategoryTest" class="method navigator-link" hash-for-method="verifyCategoryIsDeleted">verifyCategoryIsDeleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.SubCategoryTest" class="method navigator-link" hash-for-method="verifySearchSubCategory">verifySearchSubCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.SubCategoryTest" class="method navigator-link" hash-for-method="verifySubCategoryIsDeleted">verifySubCategoryIsDeleted</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-myTestSuite" title="testscripts.AdminUserTest" class="method navigator-link" hash-for-method="verifyUserCanAddNewAdminDetails">verifyUserCanAddNewAdminDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.CategoryTest" class="method navigator-link" hash-for-method="verifyUserCanAddNewCategory">verifyUserCanAddNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.AdminUserTest" class="method navigator-link" hash-for-method="verifyUserCanChangeStatusOfAdminDetails">verifyUserCanChangeStatusOfAdminDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.AdminUserTest" class="method navigator-link" hash-for-method="verifyUserCanSearchAdminUserInfo">verifyUserCanSearchAdminUserInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.ManageFooterTextTest" class="method navigator-link" hash-for-method="verifyUserCanUpdateAdminFooterDetails">verifyUserCanUpdateAdminFooterDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscripts.ManageContactTest" class="method navigator-link" hash-for-method="verifyUserCanUpdateContactDetails">verifyUserCanUpdateContactDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +192,206 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-myTestSuite" class="panel myTestSuite">
+          <div class="suite-myTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscripts.CategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanChangeActiveCategoryStatus">
+                  </a> <!-- validateUserCanChangeActiveCategoryStatus -->
+                  <span class="method-name">validateUserCanChangeActiveCategoryStatus</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a8121f35b00be83bba2129967a26b07, actions {actions=[org.openqa.selenium.interactions.Sequence@58178b69]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.126, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55636/devtoo..., se:cdpVersion: 133.0.6943.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a8121f35b00be83bba2129967a26b07
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:713)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
+	at utilities.PageUtility.actions(PageUtility.java:55)
+	at pages.CategoryPage.clickOnActiveCategoryStatus(CategoryPage.java:47)
+	at testscripts.CategoryTest.validateUserCanChangeActiveCategoryStatus(CategoryTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+		at org.openqa.selenium.json.Json.toJson(Json.java:131)
+		... 41 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	... 62 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;badge bg-success&apos;]&quot;}
+  (Session info: chrome=133.0.6943.126)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a8121f35b00be83bba2129967a26b07, findElement {using=xpath, value=//span[@class=&apos;badge bg-success&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.126, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55636/devtoo..., se:cdpVersion: 133.0.6943.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a8121f35b00be83bba2129967a26b07
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:259)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:208)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
+	... 67 more
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.ManageContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanUpdateContactDetails">
+                  </a> <!-- verifyUserCanUpdateContactDetails -->
+                  <span class="method-name">verifyUserCanUpdateContactDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.SubCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddNewSubcategorywithValidDetails">
+                  </a> <!-- verifyAddNewSubcategorywithValidDetails -->
+                  <span class="method-name">verifyAddNewSubcategorywithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchSubCategory">
+                  </a> <!-- verifySearchSubCategory -->
+                  <span class="method-name">verifySearchSubCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubCategoryIsDeleted">
+                  </a> <!-- verifySubCategoryIsDeleted -->
+                  <span class="method-name">verifySubCategoryIsDeleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.ManageFooterTextTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanUpdateAdminFooterDetails">
+                  </a> <!-- verifyUserCanUpdateAdminFooterDetails -->
+                  <span class="method-name">verifyUserCanUpdateAdminFooterDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.CategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCategoryIsDeleted">
+                  </a> <!-- verifyCategoryIsDeleted -->
+                  <span class="method-name">verifyCategoryIsDeleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanAddNewCategory">
+                  </a> <!-- verifyUserCanAddNewCategory -->
+                  <span class="method-name">verifyUserCanAddNewCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.ManageNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminUserCanAddNews">
+                  </a> <!-- verifyAdminUserCanAddNews -->
+                  <span class="method-name">verifyAdminUserCanAddNews</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminUserCanManageAndEditNews">
+                  </a> <!-- verifyAdminUserCanManageAndEditNews -->
+                  <span class="method-name">verifyAdminUserCanManageAndEditNews</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
           <div class="suite-myTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,23 +415,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyUserCanChangeStatusOfAdminDetails">
-                  </a> <!-- VerifyUserCanChangeStatusOfAdminDetails -->
-                  <span class="method-name">VerifyUserCanChangeStatusOfAdminDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyUserCanSearchAdminUserInfo">
-                  </a> <!-- VerifyUserCanSearchAdminUserInfo -->
-                  <span class="method-name">VerifyUserCanSearchAdminUserInfo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyUserCanAddNewAdminDetails">
                   </a> <!-- verifyUserCanAddNewAdminDetails -->
                   <span class="method-name">verifyUserCanAddNewAdminDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanChangeStatusOfAdminDetails">
+                  </a> <!-- verifyUserCanChangeStatusOfAdminDetails -->
+                  <span class="method-name">verifyUserCanChangeStatusOfAdminDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanSearchAdminUserInfo">
+                  </a> <!-- verifyUserCanSearchAdminUserInfo -->
+                  <span class="method-name">verifyUserCanSearchAdminUserInfo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +439,7 @@
         </div> <!-- panel myTestSuite -->
         <div panel-name="test-xml-myTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\Downloads\Groceryapplication\testng.xml</span>
+            <span class="header-content">C:\Users\DELL\git\Grocery_Application\Groceryapplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,6 +454,11 @@
           &lt;include name=&quot;verifyUserLoginWithValidCredentials&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testscripts.LoginTest --&gt;
+      &lt;class name=&quot;testscripts.SubCategoryTest&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageFooterTextTest&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageContactTest&quot;/&gt;
+      &lt;class name=&quot;testscripts.CategoryTest&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageNewsTest&quot;/&gt;
       &lt;class name=&quot;testscripts.AdminUserTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- myTest --&gt;
@@ -209,7 +473,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">myTest (2 classes)</span>
+                <span class="test-name">myTest (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,28 +499,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanAddNewAdminDetails')
-data.setCell(0, 2, 'testscripts.AdminUserTest')
-data.setCell(0, 3, 3771);
+data.setCell(0, 1, 'validateUserCanChangeActiveCategoryStatus')
+data.setCell(0, 2, 'testscripts.CategoryTest')
+data.setCell(0, 3, 11922);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserLoginWithValidCredentials')
-data.setCell(1, 2, 'testscripts.LoginTest')
-data.setCell(1, 3, 3577);
+data.setCell(1, 1, 'verifyUserCanUpdateContactDetails')
+data.setCell(1, 2, 'testscripts.ManageContactTest')
+data.setCell(1, 3, 9342);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyUserCanSearchAdminUserInfo')
-data.setCell(2, 2, 'testscripts.AdminUserTest')
-data.setCell(2, 3, 3571);
+data.setCell(2, 1, 'verifyCategoryIsDeleted')
+data.setCell(2, 2, 'testscripts.CategoryTest')
+data.setCell(2, 3, 5659);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyUserCanChangeStatusOfAdminDetails')
-data.setCell(3, 2, 'testscripts.AdminUserTest')
-data.setCell(3, 3, 2528);
+data.setCell(3, 1, 'verifySubCategoryIsDeleted')
+data.setCell(3, 2, 'testscripts.SubCategoryTest')
+data.setCell(3, 3, 5051);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserCanAddNewCategory')
+data.setCell(4, 2, 'testscripts.CategoryTest')
+data.setCell(4, 3, 4358);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySearchSubCategory')
+data.setCell(5, 2, 'testscripts.SubCategoryTest')
+data.setCell(5, 3, 4153);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUserCanUpdateAdminFooterDetails')
+data.setCell(6, 2, 'testscripts.ManageFooterTextTest')
+data.setCell(6, 3, 4043);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserLoginWithValidCredentials')
+data.setCell(7, 2, 'testscripts.LoginTest')
+data.setCell(7, 3, 3907);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddNewSubcategorywithValidDetails')
+data.setCell(8, 2, 'testscripts.SubCategoryTest')
+data.setCell(8, 3, 3604);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUserCanChangeStatusOfAdminDetails')
+data.setCell(9, 2, 'testscripts.AdminUserTest')
+data.setCell(9, 3, 3117);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAdminUserCanManageAndEditNews')
+data.setCell(10, 2, 'testscripts.ManageNewsTest')
+data.setCell(10, 3, 2891);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyUserCanAddNewAdminDetails')
+data.setCell(11, 2, 'testscripts.AdminUserTest')
+data.setCell(11, 3, 2883);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyAdminUserCanAddNews')
+data.setCell(12, 2, 'testscripts.ManageNewsTest')
+data.setCell(12, 3, 2590);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyUserCanSearchAdminUserInfo')
+data.setCell(13, 2, 'testscripts.AdminUserTest')
+data.setCell(13, 3, 2577);
 window.suiteTableData['myTestSuite']= { tableData: data, tableDiv: 'times-div-myTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-myTestSuite">
               </div> <!-- times-div-myTestSuite -->
             </div> <!-- times-div -->
@@ -277,11 +581,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testscripts.LoginTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyUserLoginWithInvalidUsernameAndInvalidPassword</span>
+                <br/>
                 <span class="ignored-method-name">verifyUserLoginWithInvalidUsernameAndValidPassword</span>
                 <br/>
                 <span class="ignored-method-name">verifyUserLoginWithValidUsernameAndInvalidPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyUserLoginWithInvalidUsernameAndInvalidPassword</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -300,50 +604,187 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginWithValidCredentials</span>
-                <span class="method-start">6969 ms</span>
+                <span class="method-start">10240 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyUserLogin...)</span>
-                <span class="method-start">10553 ms</span>
+                <span class="method-start">14151 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">14811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchSubCategory</span>
+                <span class="method-start">19685 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifySearchSubCategory status=SUCCESS method=SubCategoryTest.verifySearchSubCatego...)</span>
+                <span class="method-start">23840 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">24373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySubCategoryIsDeleted</span>
+                <span class="method-start">29317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifySubCategoryIsDeleted status=SUCCESS method=SubCategoryTest.verifySubCategoryI...)</span>
+                <span class="method-start">34371 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">34872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddNewSubcategorywithValidDetails</span>
+                <span class="method-start">39372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyAddNewSubcategorywithValidDetails status=SUCCESS method=SubCategoryTest.verif...)</span>
+                <span class="method-start">42978 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageFooterTextTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">43951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanUpdateAdminFooterDetails</span>
+                <span class="method-start">49644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserCanUpdateAdminFooterDetails status=SUCCESS method=ManageFooterTextTest.ve...)</span>
+                <span class="method-start">53689 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">54260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanUpdateContactDetails</span>
+                <span class="method-start">59085 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserCanUpdateContactDetails status=SUCCESS method=ManageContactTest.verifyUse...)</span>
+                <span class="method-start">68428 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.CategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">68937 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateUserCanChangeActiveCategoryStatus</span>
+                <span class="method-start">73732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=validateUserCanChangeActiveCategoryStatus status=FAILURE method=CategoryTest.valida...)</span>
+                <span class="method-start">85659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">86593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCategoryIsDeleted</span>
+                <span class="method-start">91797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyCategoryIsDeleted status=SUCCESS method=CategoryTest.verifyCategoryIsDeleted(...)</span>
+                <span class="method-start">97459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">98278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanAddNewCategory</span>
+                <span class="method-start">103230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserCanAddNewCategory status=SUCCESS method=CategoryTest.verifyUserCanAddNewC...)</span>
+                <span class="method-start">107606 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">110716 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAdminUserCanAddNews</span>
+                <span class="method-start">116547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyAdminUserCanAddNews status=SUCCESS method=ManageNewsTest.verifyAdminUserCanAd...)</span>
+                <span class="method-start">119138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialisebrowser(Chrome)</span>
+                <span class="method-start">119617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAdminUserCanManageAndEditNews</span>
+                <span class="method-start">124395 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyAdminUserCanManageAndEditNews status=SUCCESS method=ManageNewsTest.verifyAdmi...)</span>
+                <span class="method-start">127288 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscripts.AdminUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialisebrowser(Chrome)</span>
-                <span class="method-start">10564 ms</span>
+                <span class="method-start">127804 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyUserCanChangeStatusOfAdminDetails</span>
-                <span class="method-start">18387 ms</span>
+                <span class="method-name">verifyUserCanChangeStatusOfAdminDetails</span>
+                <span class="method-start">132576 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=VerifyUserCanChangeStatusOfAdminDetails status=SUCCESS method=AdminUserTest.VerifyU...)</span>
-                <span class="method-start">20919 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUserCanChangeStatusOfAdminDetails status=SUCCESS method=AdminUserTest.verifyU...)</span>
+                <span class="method-start">135694 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialisebrowser(Chrome)</span>
-                <span class="method-start">20922 ms</span>
+                <span class="method-start">136321 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyUserCanSearchAdminUserInfo</span>
-                <span class="method-start">26785 ms</span>
+                <span class="method-name">verifyUserCanSearchAdminUserInfo</span>
+                <span class="method-start">140693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=VerifyUserCanSearchAdminUserInfo status=SUCCESS method=AdminUserTest.VerifyUserCanS...)</span>
-                <span class="method-start">30359 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUserCanSearchAdminUserInfo status=SUCCESS method=AdminUserTest.verifyUserCanS...)</span>
+                <span class="method-start">143271 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialisebrowser(Chrome)</span>
-                <span class="method-start">30361 ms</span>
+                <span class="method-start">143851 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanAddNewAdminDetails</span>
-                <span class="method-start">37109 ms</span>
+                <span class="method-start">148370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserCanAddNewAdminDetails status=SUCCESS method=AdminUserTest.verifyUserCanAd...)</span>
-                <span class="method-start">40882 ms</span>
+                <span class="method-start">151254 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

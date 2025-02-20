@@ -109,7 +109,7 @@ public class SubCategoryPage {
 	public SubCategoryPage searchSubCategory() {
 		waitutility.waitUntilElementisClickable(driver, searchcategorydropdown);
 		pageutility.selectDropDownWithVisibleText(searchcategorydropdown, "Toys");
-		searchsubcategoryfield.sendKeys("Teddy");
+		searchsubcategoryfield.sendKeys("Bunny");
 		elementsearchbutton.click();
 		return this;
 	}
@@ -125,7 +125,7 @@ public class SubCategoryPage {
 				String subCategoryName = columns.get(0).getText();
 				String categoryName = columns.get(1).getText();
 
-				if (categoryName.equals("Toys") && subCategoryName.contains("Teddy")) {
+				if (categoryName.equals("Toys") && subCategoryName.contains("Bunny")) {
 					System.out.println("Subcategory: " + subCategoryName + ", Category: " + categoryName);
 					System.out.println("Element found");
 					return true;

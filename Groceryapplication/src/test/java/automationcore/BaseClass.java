@@ -51,7 +51,7 @@ public class BaseClass {
 			screenshot.captureFailureScreenShot(driver, itestresult.getName());
 
 		}
-		// driver.quit();
+		driver.quit();
 	}
 
 }

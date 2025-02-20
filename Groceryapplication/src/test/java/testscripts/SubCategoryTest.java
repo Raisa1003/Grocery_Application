@@ -15,24 +15,23 @@ public class SubCategoryTest extends BaseClass {
 	HomePage home;
 	SubCategoryPage subcategory;
 
-	@Test
+	@Test(priority=1)
+	public void verifySubCategoryIsDeleted() throws IOException, AWTException, InterruptedException {
+		login = new LoginPage(driver);
+		home = login.loginUsingExcelData();
+		subcategory = home.clickOnSubcategory().deleteSubCategory();
+		boolean isalertpresent = subcategory.isAlertDisplayed();
+		Assert.assertTrue(isalertpresent, Constants.SC_verifySubCategoryIsDeleted);
+	}
+
+	@Test(priority=2)
 	public void verifyAddNewSubcategorywithValidDetails() throws IOException, AWTException, InterruptedException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();
 		subcategory = home.clickOnSubcategory().clickOnNewSubCategoryButton().clickOnCategoryDropDown()
 				.enterSubCategoryField().clickonChooseFileButton().clickOnSaveButton();
 		boolean isalertpresent = subcategory.isAlertDisplayed();
-		Assert.assertTrue(isalertpresent,Constants.SC_verifyAddNewSubcategorywithValidDetails );
-
-	}
-
-	@Test
-	public void verifySubCategoryIsDeleted() throws IOException, AWTException, InterruptedException {
-		login = new LoginPage(driver);
-		home = login.loginUsingExcelData();
-		subcategory = home.clickOnSubcategory().deleteSubCategory();
-		boolean isalertpresent = subcategory.isAlertDisplayed();
-		Assert.assertTrue(isalertpresent,Constants.SC_verifySubCategoryIsDeleted );
+		Assert.assertTrue(isalertpresent, Constants.SC_verifyAddNewSubcategorywithValidDetails);
 	}
 
 	@Test
@@ -42,6 +41,6 @@ public class SubCategoryTest extends BaseClass {
 		home.clickOnSubcategory();
 		subcategory = home.clickOnSubcategory().clickOnSearchButton().searchSubCategory();
 		boolean iselementfound = subcategory.displaySearchedElement();
-		Assert.assertTrue(iselementfound,Constants.SC_verifySearchSubCategory);
+		Assert.assertTrue(iselementfound, Constants.SC_verifySearchSubCategory);
 	}
 }

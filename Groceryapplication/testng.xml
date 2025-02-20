@@ -16,8 +16,8 @@
 			<class name="testscripts.ManageFooterTextTest"></class>
 			<class name="testscripts.ManageContactTest"></class>
 			<class name="testscripts.CategoryTest"></class>
-			<class name="testscripts.AdminUserTest"></class>
 			<class name="testscripts.ManageNewsTest"></class>
+			<class name="testscripts.AdminUserTest"></class>
 		</classes>
 	</test>
 </suite>

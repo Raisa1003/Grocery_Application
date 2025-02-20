@@ -84,7 +84,7 @@ public class AdminUserPage {
 	}
 
 	public AdminUserPage searchUserNameandPasswordField() {
-		searchusernamefield.sendKeys("Miss Victor Huel");
+		searchusernamefield.sendKeys("Alec Watsica");
 		pageutility.selectDropDownWithVisibleText(searchAdminusertypefield, "Admin");
 		return this;
 
