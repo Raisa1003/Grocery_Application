@@ -16,7 +16,7 @@ public class CategoryTest extends BaseClass {
 	HomePage home;
 	CategoryPage category;
 
-	@Test(priority=1)
+	@Test
 	public void verifyCategoryIsDeleted() throws IOException, AWTException, InterruptedException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();
@@ -25,7 +25,7 @@ public class CategoryTest extends BaseClass {
 		Assert.assertTrue(isalertpresent, Constants.CA_verifyCategoryIsDeleted);
 	}
 
-	@Test
+	@Test(priority=2)
 	public void validateUserCanChangeActiveCategoryStatus() throws IOException {
 
 		login = new LoginPage(driver);
@@ -36,7 +36,7 @@ public class CategoryTest extends BaseClass {
 
 	}
 
-	@Test(priority=2)
+	@Test(priority=1)
 	public void verifyUserCanAddNewCategory() throws IOException {
 		login = new LoginPage(driver);
 		home = login.loginUsingExcelData();

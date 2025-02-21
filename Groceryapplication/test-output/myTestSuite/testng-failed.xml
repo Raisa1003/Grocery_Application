@@ -4,13 +4,13 @@
   <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testscripts.CategoryTest">
+      <class name="testscripts.AdminUserTest">
         <methods>
           <include name="initialisebrowser"/>
           <include name="driverQuit"/>
-          <include name="validateUserCanChangeActiveCategoryStatus"/>
+          <include name="verifyUserCanSearchAdminUserInfo"/>
         </methods>
-      </class> <!-- testscripts.CategoryTest -->
+      </class> <!-- testscripts.AdminUserTest -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [myTestSuite] -->
