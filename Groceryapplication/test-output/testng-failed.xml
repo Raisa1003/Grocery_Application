@@ -4,11 +4,60 @@
   <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testscripts.AdminUserTest">
+      <class name="testscripts.SubCategoryTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="verifySearchSubCategory"/>
+          <include name="driverQuit"/>
+          <include name="verifyAddNewSubcategorywithValidDetails"/>
+          <include name="verifySubCategoryIsDeleted"/>
+        </methods>
+      </class> <!-- testscripts.SubCategoryTest -->
+      <class name="testscripts.ManageContactTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="verifyUserCanUpdateContactDetails"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.ManageContactTest -->
+      <class name="testscripts.ManageFooterTextTest">
         <methods>
           <include name="initialisebrowser"/>
           <include name="driverQuit"/>
+          <include name="verifyUserCanUpdateAdminFooterDetails"/>
+        </methods>
+      </class> <!-- testscripts.ManageFooterTextTest -->
+      <class name="testscripts.CategoryTest">
+        <methods>
+          <include name="verifyUserCanAddNewCategory"/>
+          <include name="initialisebrowser"/>
+          <include name="driverQuit"/>
+          <include name="verifyCategoryIsDeleted"/>
+          <include name="validateUserCanChangeActiveCategoryStatus"/>
+        </methods>
+      </class> <!-- testscripts.CategoryTest -->
+      <class name="testscripts.ManageNewsTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="verifyAdminUserCanManageAndEditNews"/>
+          <include name="verifyAdminUserCanAddNews"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.ManageNewsTest -->
+      <class name="testscripts.LoginTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="verifyUserLoginWithValidCredentials"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.LoginTest -->
+      <class name="testscripts.AdminUserTest">
+        <methods>
+          <include name="initialisebrowser"/>
+          <include name="verifyUserCanChangeStatusOfAdminDetails"/>
+          <include name="driverQuit"/>
           <include name="verifyUserCanSearchAdminUserInfo"/>
+          <include name="verifyUserCanAddNewAdminDetails"/>
         </methods>
       </class> <!-- testscripts.AdminUserTest -->
     </classes>

@@ -43,9 +43,9 @@ public class LoginPage {
 	}
 
 	public HomePage loginUsingExcelData() throws IOException {
-		String username = ExcelUtility.readUsernameData(1, 0, "LoginPage");
+		String username = ExcelUtility.readStringData(1, 0, "LoginPage");
 		usernamefield.sendKeys(username);
-		String password = ExcelUtility.readPasswordData(1, 1, "LoginPage");
+		String password = ExcelUtility.readStringData(1, 1, "LoginPage");
 		passwordfield.sendKeys(password);
 		signinbutton.click();
 		return new HomePage(driver);
