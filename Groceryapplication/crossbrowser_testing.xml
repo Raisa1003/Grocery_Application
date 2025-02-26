@@ -1,6 +1,6 @@
 <suite name="crosbrowser_testing" parallel="tests" thread-count="2">
 	<test thread-count="5" name="chromeTest">
-	<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 
 			<class name="testscripts.LoginTest">
@@ -12,12 +12,23 @@
 		</classes>
 	</test>
 	<test thread-count="5" name="edge-test">
-	<parameter name="browser" value="Edge"></parameter>
+		<parameter name="browser" value="Edge"></parameter>
 		<classes>
-	<class name="testscripts.SwapnaNewTest">
+			<class name="testscripts.CategoryTest">
 				<methods>
 					<include
-						name="verifyUserIsAbleToEditContactDetails"></include>
+						name="verifyCategoryIsDeleted"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="firefox-test">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testscripts.ManageContactTest">
+				<methods>
+					<include
+						name="verifyUserCanUpdateContactDetails"></include>
 				</methods>
 			</class>
 		</classes>

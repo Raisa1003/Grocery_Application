@@ -5,13 +5,13 @@
 				<include name="smoke"></include>
 			</run>
 		</groups>
-		<!-- <listeners>
+		<listeners>
 			<listener class-name="listeners.Listeners" />
 			<listener class-name="listeners.RetryListener" />
-		</listeners>-->
+		</listeners>
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-		
+
 			<class name="testscripts.SubCategoryTest"></class>
 
 		</classes>

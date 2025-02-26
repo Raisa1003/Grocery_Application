@@ -1,6 +1,5 @@
 package pages;
 
-
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -79,6 +78,8 @@ public class SubCategoryPage {
 	}
 
 	public SubCategoryPage clickOnSaveButton() {
+
+		waitutility.waitUntilElementisClickable(driver, savebutton);
 		savebutton.click();
 		return this;
 
@@ -107,6 +108,7 @@ public class SubCategoryPage {
 	}
 
 	public SubCategoryPage searchSubCategory() {
+
 		waitutility.waitUntilElementisClickable(driver, searchcategorydropdown);
 		pageutility.selectDropDownWithVisibleText(searchcategorydropdown, "Toys");
 		searchsubcategoryfield.sendKeys("Bunny");

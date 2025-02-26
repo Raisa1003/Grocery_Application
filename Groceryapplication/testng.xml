@@ -1,9 +1,9 @@
 <suite name="myTestSuite">
 	<parameter name="browser" value="Chrome"></parameter>
-	<!--<listeners>
+	<listeners>
 		<listener class-name="listeners.Listeners"></listener>
-		//<listener class-name="listeners.RetryListener"></listener>
-	</listeners>-->
+		<listener class-name="listeners.RetryListener"></listener>
+	</listeners>
 	<test name="myTest">
 		<classes>
 			<class name="testscripts.LoginTest">
@@ -12,7 +12,7 @@
 						name="verifyUserLoginWithValidCredentials"></include>
 				</methods>
 			</class>
-		    <class name="testscripts.SubCategoryTest"></class>
+			<class name="testscripts.SubCategoryTest"></class>
 			<class name="testscripts.ManageFooterTextTest"></class>
 			<class name="testscripts.ManageContactTest"></class>
 			<class name="testscripts.CategoryTest"></class>

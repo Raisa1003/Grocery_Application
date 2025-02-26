@@ -1,7 +1,5 @@
 package pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,7 +16,7 @@ public class HomePage {
 
 	public HomePage(WebDriver driver)// constructor
 	{
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
 		this.driver = driver;
 		PageFactory.initElements(driver, this);// initElements=initialise all web elements
 
@@ -64,7 +62,7 @@ public class HomePage {
 	}
 
 	public ManageNewsPage clickOnManageNews() {
-		
+
 		waitutility.waitUntilElementisClickable(driver, managenews);
 		managenews.click();
 		return new ManageNewsPage(driver);
